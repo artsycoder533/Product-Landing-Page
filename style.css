@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-color: red yellow;
+}
+
+/* navbar */
+#header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+#nav-bar, #brand {
+    display: flex;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#nav-bar ul li {
+    list-style: none;
+}
+
+#nav-bar ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+/* cover content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+}
+
+#cover {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo, #form_holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    width: 350px;
+    height: 20px;
+    margin: 15px;
+    padding: 15px;
+}
+
+#submit {
+    padding: 3px;
+    margin: 10px;
+    width: 150px;
+    height: 35px;
+    text-transform: uppercase;
+    background-color: red;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 20px;
+}
+
+/* page sections */
+#process, #services, #pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+div ul {
+    text-align: center;
+    list-style: none;
+}
+
+div ul li {
+    line-height: 25px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    padding: 50px;
+}
+
+footer {
+    background-color: lightgray;
+    margin-top: 40px;
+}
+
+p {
+    text-align: center;
+    line-height: 25px;
+}
+
+/* media queries */
+@media screen and (max-width: 1000px){
+    #cover {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px){
+    section {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        flex-direction: row;
+    }
+
+
+    #cover {
+        flex-direction: column;
+    }
+
+    iframe {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        height: 250px;
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+}
+
